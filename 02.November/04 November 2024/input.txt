@@ -1,2 +1,3 @@
-12
-toosmallword
+2
+10
+3
