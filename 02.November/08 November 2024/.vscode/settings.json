@@ -87,6 +87,9 @@
     "editor.cursorBlinking": "expand",
     "editor.mouseWheelZoom": true,
     "editor.wordWrap": "on",
+    "files.associations": {
+        "stdlib.h": "c"
+    },
    
 }
 
