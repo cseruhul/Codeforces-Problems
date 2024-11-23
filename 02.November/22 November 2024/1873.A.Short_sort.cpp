@@ -1,31 +1,24 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main()
 {
-    int n, max_score = 0;
-    string str, ans;
-    cin >> n;
-    unordered_map<string, int> team;
-
-    while (n--)
+    int t;
+    string s;
+    cin >> t;
+    while (t--)
     {
-        cin >> str;
-        team[str]++;
-    }
+        cin >> s;
 
-    unordered_map<string, int>::iterator itr;
-
-    for (itr = team.begin(); itr != team.end(); itr++)
-    {
-        if (itr->second > max_score)
+        if (s == "bca" || s == "cab")
         {
-            max_score = itr->second;
-            ans = itr->first;
+            cout << "NO" << endl;
+        }
+        else
+        {
+            cout << "YES" << endl;
         }
     }
-
-    cout << ans;
-
     return 0;
 }
